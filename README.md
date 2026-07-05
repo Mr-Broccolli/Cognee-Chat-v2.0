@@ -138,8 +138,8 @@ Cognee-Chat/
 ### 1. Clone & Environment
 
 ```bash
-git clone https://github.com/Mr-Broccolli/Cognee-Chat.git
-cd Cognee-Chat
+git clone https://github.com/Mr-Broccolli/CogneeChat.git
+cd CogneeChat
 ```
 
 ### 2. Frontend
