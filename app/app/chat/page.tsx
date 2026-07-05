@@ -271,6 +271,9 @@ function ChatContent() {
 }
 
 export default function ChatPage() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
+  if (!mounted) return null;
   return (
     <Suspense fallback={<div className="flex items-center justify-center h-full text-text-muted text-sm">Loading...</div>}>
       <ChatContent />

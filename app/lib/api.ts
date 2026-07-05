@@ -3,7 +3,7 @@ let cachedBaseUrl: string | null = null;
 export const getBaseUrl = async () => {
   if (cachedBaseUrl) return cachedBaseUrl;
   try {
-    const res = await fetch(`${window.location.origin}/api/port`);
+    const res = await fetch('/api/port');
     const data = await res.json();
     cachedBaseUrl = `http://localhost:${data.port}`;
     return cachedBaseUrl;
@@ -35,16 +35,6 @@ export const api = {
       body: formData,
     });
     if (!res.ok) throw new Error(`Failed to ingest file: ${await res.text()}`);
-    return res.json();
-  },
-  chat: async (message: string) => {
-    const baseUrl = await getBaseUrl();
-    const res = await fetch(`${baseUrl}/chat`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text: message }),
-    });
-    if (!res.ok) throw new Error(`Chat error: ${await res.text()}`);
     return res.json();
   },
   getGraph: async () => {

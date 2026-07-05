@@ -97,8 +97,8 @@ export default function IngestPage() {
                 Processing...
               </span>
             ) : 'Ingest Text'}
-          {ingesting && <p className="text-xs text-text-muted mt-2">Extracting graph nodes... this may take a moment for larger texts.</p>}
           </button>
+          {ingesting && <p className="text-xs text-text-muted mt-2">Extracting graph nodes... this may take a moment for larger texts.</p>}
         </section>
 
         {/* File Upload */}

@@ -57,8 +57,8 @@ export default function Sidebar() {
   }, []);
 
   const newChat = async () => {
-    const sessions = await api.getSessions();
-    setSessions(sessions);
+    const data = await api.getSessions();
+    setSessions(data);
     router.push('/chat');
   };
 
