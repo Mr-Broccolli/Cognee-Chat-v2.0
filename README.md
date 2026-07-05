@@ -138,7 +138,7 @@ Cognee-Chat/
 ### 1. Clone & Environment
 
 ```bash
-git clone https://github.com/Mr-Broccolli/CogneeChat.git
+git clone https://github.com/Mr-Broccolli/Cognee-Chat-v2.0.git
 cd CogneeChat
 ```
 
