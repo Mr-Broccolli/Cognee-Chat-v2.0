@@ -5,13 +5,11 @@
 **Talk to your own knowledge graph.**  
 Ingest documents, build a smart graph, and chat with AI that *remembers* connections.
 
-<p>
-  <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=nextdotjs" alt="Next.js 16" />
-  <img src="https://img.shields.io/badge/FastAPI-teal?style=flat-square&logo=fastapi" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/React_Flow-purple?style=flat-square" alt="React Flow" />
-  <img src="https://img.shields.io/badge/SQLite-blue?style=flat-square&logo=sqlite" alt="SQLite" />
-  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License" />
-</p>
+[![Next.js 16](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=nextdotjs)](https://nextjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-teal?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React Flow](https://img.shields.io/badge/React_Flow-purple?style=flat-square)](https://reactflow.dev/)
+[![SQLite](https://img.shields.io/badge/SQLite-blue?style=flat-square&logo=sqlite)](https://www.sqlite.org/)
+[![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ![Dark mode UI screenshot showing chat interface with sidebar](https://img.shields.io/badge/UI-Dark%20Mode-%230c0e14?style=flat-square)
 
@@ -35,19 +33,19 @@ It uses [Cognee](https://github.com/topoteretes/cognee) (a graph-RAG engine) und
 
 ```
                            ┌─────────────────────┐
-                           │   Your Browser       │
-                           │  (Dark mode UI)      │
+                           │     Your Browser    │
+                           │    (Dark mode UI)   │
                            └──────────┬──────────┘
                                       │
                            ┌──────────▼──────────┐
-                           │   Next.js 16        │
+                           │  Next.js 16         │
                            │  • Chat, Ingest,    │
                            │    Graph, Settings  │
                            └──────────┬──────────┘
                                       │  fetch() to backend
                                       ▼
                            ┌─────────────────────┐
-                           │   FastAPI Backend    │
+                           │   FastAPI Backend   │
                            │  • /chat            │
                            │  • /ingest          │
                            │  • /graph/visualize │
@@ -61,9 +59,9 @@ It uses [Cognee](https://github.com/topoteretes/cognee) (a graph-RAG engine) und
                            └──────────┬──────────┘
                                       │
                            ┌──────────▼──────────┐
-                           │   SQLite  +  Kuzu    │
-                           │  sessions  knowledge  │
-                           │           graph      │
+                           │   SQLite +  Kuzu    │
+                           │  sessions  knowledge│
+                           │        graph        │
                            └─────────────────────┘
 ```
 
@@ -248,4 +246,4 @@ You can change the model in Settings → LLM Model:
 
 ## 📄 License
 
-MIT — see [LICENSE](LICENSE).
+Apache 2.0 — see [LICENSE](LICENSE).
