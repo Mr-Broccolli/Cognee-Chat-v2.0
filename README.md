@@ -146,23 +146,25 @@ git clone https://github.com/Mr-Broccolli/Cognee-Chat-v2.0.git
 cd Cognee-Chat-v2.0
 ```
 
-### 2. Frontend
+### 2. Backend
 
 ```bash
+python -m venv venv
+.\venv\Scripts\Activate.ps1   # Windows
+source venv/bin/activate      # macOS / Linux
+pip install -r requirements.txt
+python start_backend.py
+```
+
+### 3. Frontend
+
+```bash
+cd app
 npm install
 npm run dev                  # http://localhost:3000
 ```
 
-### 3. Backend
-
-```bash
-python -m venv venv
-`.\venv\Scripts\Activate.ps1` (Windows) or `source venv/bin/activate` (macOS / Linux)
-pip install -r requirements.txt
-uvicorn api:app --host 127.0.0.1 --port 8001 --reload
-```
-
-The Next.js `/api/*` rewrite proxies all API calls to `http://127.0.0.1:8001` automatically.
+The frontend discovers the backend port automatically via the `.port` file.
 
 ### 4. Smoke Test
 
