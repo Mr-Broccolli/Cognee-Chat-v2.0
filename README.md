@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square" alt="build passing" />
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="Apache-2.0 License" />
+  <img src="https://img.shields.io/github/license/saltstack/salt" alt="Apache-2.0 License" />
   <img src="https://img.shields.io/badge/Next.js-14-black.svg?style=flat-square&logo=nextdotjs" alt="Next.js 14" />
   <img src="https://img.shields.io/badge/FastAPI-teal.svg?style=flat-square&logo=fastapi" alt="FastAPI" />
   <img src="https://img.shields.io/badge/SQLite-blue.svg?style=flat-square&logo=sqlite" alt="SQLite" />
